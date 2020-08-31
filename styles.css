@@ -1,0 +1,161 @@
+/*=======Сброс css=============*/
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul, {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+/*============Fonts=============*/
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/oswald/Oswald-Regular.woff2'),
+       url('fonts/oswald/Oswald-Regular.woff'),
+       url('fonts/oswald/Oswald-Regular.ttf'),
+       url('fonts/oswald/Oswald-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/oswald/Oswald-Bold.woff2'),
+       url('fonts/oswald/Oswald-Bold.woff'),
+       url('fonts/oswald/Oswald-Bold.ttf'),
+       url('fonts/oswald/Oswald-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/oswald/Oswald-Light.woff2'),
+       url('fonts/oswald/Oswald-Light.woff'),
+       url('fonts/oswald/Oswald-Light.ttf'),
+       url('fonts/oswald/Oswald-Light.otf');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/oswald/Oswald-Medium.woff2'),
+       url('fonts/oswald/Oswald-Medium.woff'),
+       url('fonts/oswald/Oswald-Medium.ttf'),
+       url('fonts/oswald/Oswald-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*===================Main styles==================*/
+body {
+  max-width: 1800px;
+}
+h1 {
+  font: normal 500 72px 'Oswald', sans-serif;
+  letter-spacing: 4.608px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*==================Header========================*/
+header {
+  height: 904px;
+  background-image: url('img/first_bg.jpg');
+}
+.gradient_bg {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(177.86deg, #000000 -41.81%, rgba(0, 0, 0, 0.0001) 82.48%),
+                    linear-gradient(2.34deg, #000000 -44.57%, rgba(0, 0, 0, 0.0001) 17.83%),
+                    linear-gradient(87.84deg, #000000 8.34%, rgba(0, 0, 0, 0.0001) 71.65%),
+                    linear-gradient(270deg, #000000 -17.62%, rgba(0, 0, 0, 0.0001) 82.37%);
+}
+header nav {
+  margin-left: 990px;
+  padding-top:80px;
+
+}
+.navbar {
+  font: normal normal 14px 'Oswald', sans-serif;
+  letter-spacing: 1.94px;
+  display: flex;
+}
+.navbar li {
+  display: inline-block;
+  margin-left: 60px;
+}
+.navbar li:first-child {
+  flex
+}
+.navbar li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+header h1 {
+  text-align: center;
+  margin-top: 275px;
+}
+header span {
+  display: block;
+  font: normal normal 20px 'Open sans', sans-serif;
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 1.28px;
+  color: #fff;
+}
+.bg_number_block {
+  width: 120px;
+  margin: 310px auto 0 auto;
+}
+.bg_number {
+  display: inline-block;
+  font: normal bold 18px 'Oswald', sans-serif;
+  letter-spacing: 1.152px;
+  color: rgba(255, 255, 255, 0.437245);
+}
+.bg_number:hover {
+  cursor: pointer;
+}
+.active {
+  font-size: 36px;
+  color: #fff;
+}
