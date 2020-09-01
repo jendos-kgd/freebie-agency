@@ -29,7 +29,7 @@ display: block;
 body {
 line-height: 1;
 }
-ol, ul, {
+ol, ul, li {
 list-style: none;
 }
 blockquote, q {
@@ -91,7 +91,7 @@ a {
        url('fonts/open_sans/OpenSans-Regular.ttf'),
        url('fonts/open_sans/OpenSans-Regular.otf');
   font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
 }
 @font-face {
   font-family: 'Open Sans';
@@ -110,6 +110,15 @@ a {
        url('fonts/open_sans/OpenSans-Bold.otf');
   font-style: normal;
   font-weight: bold;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/open_sans/OpenSans-SemiBold.woff2'),
+       url('fonts/open_sans/OpenSans-SemiBold.woff'),
+       url('fonts/open_sans/OpenSans-SemiBold.ttf'),
+       url('fonts/open_sans/OpenSans-SemiBold.otf');
+  font-style: normal;
+  font-weight: 600;
 }
 
 
@@ -148,7 +157,7 @@ hr {
 }
 /*==================Header========================*/
 header {
-  height: 904px;
+  min-height: 904px;
   background-image: url('img/first_bg.jpg');
 }
 .gradient_bg {
@@ -160,7 +169,8 @@ header {
                     linear-gradient(270deg, #000000 -17.62%, rgba(0, 0, 0, 0.0001) 82.37%);
 }
 header nav {
-  margin-left: 990px;
+  float: right;
+  margin-right: 312px;
   padding-top:80px;
 
 }
@@ -182,7 +192,7 @@ header nav {
 }
 header h1 {
   text-align: center;
-  margin-top: 275px;
+  padding-top: 380px;
 }
 header span {
   display: block;
@@ -295,7 +305,7 @@ header span {
 }
 .services_card img {
   position: absolute;
-  left: 275px;
+  right: 48px;
   top: 38px;
 }
 .services_card a {
@@ -304,4 +314,107 @@ header span {
   color: #252525;
   display: block;
   margin-top: 19px;
+}
+
+/*==========================Work block==============*/
+.work_block {
+  padding-left: 315px;
+  padding-top: 210px;
+  position: relative;
+  height: 1990px;
+}
+.works_navbar {
+  margin-top: 50px;
+}
+.works_navbar li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.works_navbar li a {
+  text-transform: uppercase;
+  font: normal 600 13px 'Open Sans', sans-serif;
+  letter-spacing: : 0.832px;
+  color: #252525;
+  opacity: 0.3;
+}
+.works_navbar li a:hover {
+  opacity: 1;
+}
+.work_example_block {
+  position: relative;
+}
+.work_example_item {
+  position: absolute;
+}
+.work_item_link {
+  font: normal normal 13px 'Open Sans', sans-serif;
+  letter-spacing: 0.832px;
+  color: #252525;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 20px;
+  margin-left: 37%;
+}
+.work_item_title {
+  font: normal 300 48px/71px 'Oswald', sans-serif;
+  letter-spacing: 3.072px;
+  color: #252525;
+}
+.work_item_title:hover,
+.work_item_link:hover {
+  text-decoration: line-through;
+  text-decoration-color: #70BF73;
+}
+.right {
+  position: absolute;
+  top: 280px;
+  left: -120px;
+}
+.left {
+  position: absolute;
+  top: 280px;
+  right: -120px;
+}
+.work_item_group {
+  font: normal 300 18px 'Open Sans', sans-serif;
+  letter-spacing: 1.152px;
+  color: #252525;
+  margin-top: 20px;
+  text-align: center;
+}
+.work_item_discr {
+  font: normal 300 13px/23px 'Open Sans', sans-serif;
+  letter-spacing: 0.832px;
+  color: #C2C2C2;
+  margin-top: 17px;
+}
+.right_discr {
+  text-align: right;
+  margin-right: 37%;
+}
+.left_discr {
+  text-align: left;
+  margin-left: 37%;
+}
+#first_work {
+  top: -200px;
+  right: 120px;
+}
+#second_work {
+  top: 160px;
+}
+#third_work {
+  top: 520px;
+  right: 120px;
+}
+#forth_work {
+  top: 900px;
+}
+#work_block_link {
+  font: normal normal 13px 'Oswald' sans-serif;
+  text-transform: uppercase;
+  color: #252525;
+  position: absolute;
+  bottom: 175px;
+  right: 120px;
 }
