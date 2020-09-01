@@ -418,3 +418,70 @@ header span {
   bottom: 175px;
   right: 120px;
 }
+
+/*====================Team===============================*/
+.team_block {
+  max-width: 1800px;
+  min-height: 845px;
+  background-color: #FBFBFB;
+  padding-top: 130px;
+}
+.team_block h2,
+.team_block>hr {
+  margin-left: 315px;
+}
+.team_cards_container {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+}
+.team_cards_item {
+  width: 370px;
+  height: 398px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 35px;
+}
+.team_cards_item:last-child {
+  margin-right: 0;
+}
+.team_cards_about {
+  background-color: rgba(100%, 100%, 100%, 0.92);
+  height: 155px;
+  position: relative;
+  top: 345px;
+  transition-duration: 1s;
+}
+.team_cards_about:hover {
+  top: 250px;
+}
+.name,
+.jobs {
+  font: normal 300 18px/27px 'Oswald', sans-serif;
+  text-align: center;
+  letter-spacing: 1.152px;
+}
+.name {
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+.team_cards_item hr {
+  margin-left: auto;
+  margin-right: auto;
+}
+.slogan {
+  font: normal normal 12px/25px 'Open Sans', sans-serif;
+  letter-spacing: 1.008px;
+  color: #777777;
+  text-align: center;
+  margin-top: 12px;
+}
+#tom_jones {
+  background-image: url('img/photo_tom_jones.png');
+}
+#michael_fraup {
+  background-image: url('img/photo_michael_fraup.png');
+}
+#tim_cahill {
+  background-image: url('img/photo_tim_cahill.png');
+}
