@@ -28,5 +28,45 @@ $(document).ready(
         $('#third_bg').addClass('active');
       }
     );
+
+    $('#next').click(function () {
+      nextReview();
+    })
+
+    $('#previos').click(function () {
+      previosReview();
+    })
   }
 )
+
+function nextReview() {
+  if ($('#first_review').hasClass('visible')) {
+    $('#first_review').removeClass('visible').addClass('unvisible');
+    $('#second_review').removeClass('unvisible').addClass('visible');
+  } else if ($('#second_review').hasClass('visible')) {
+    $('#second_review').removeClass('visible').addClass('unvisible');
+    $('#third_review').removeClass('unvisible').addClass('visible');
+  } else if ($('#third_review').hasClass('visible')) {
+    $('#third_review').removeClass('visible').addClass('unvisible');
+    $('#forth_review').removeClass('unvisible').addClass('visible');
+  } else if ($('#forth_review').hasClass('visible')) {
+    $('#forth_review').removeClass('visible').addClass('unvisible');
+    $('#first_review').removeClass('unvisible').addClass('visible');
+  }
+}
+
+function previosReview() {
+  if ($('#first_review').hasClass('visible')) {
+    $('#first_review').removeClass('visible').addClass('unvisible');
+    $('#forth_review').removeClass('unvisible').addClass('visible');
+  } else if ($('#forth_review').hasClass('visible')) {
+    $('#forth_review').removeClass('visible').addClass('unvisible');
+    $('#third_review').removeClass('unvisible').addClass('visible');
+  } else if ($('#third_review').hasClass('visible')) {
+    $('#third_review').removeClass('visible').addClass('unvisible');
+    $('#second_review').removeClass('unvisible').addClass('visible');
+  } else if ($('#second_review').hasClass('visible')) {
+    $('#second_review').removeClass('visible').addClass('unvisible');
+    $('#first_review').removeClass('unvisible').addClass('visible');
+  }
+}

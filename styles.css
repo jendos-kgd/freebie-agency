@@ -485,3 +485,70 @@ header span {
 #tim_cahill {
   background-image: url('img/photo_tim_cahill.png');
 }
+
+/*=================Review===============*/
+.review_block {
+  width: 100%;
+  min-height: 505px;
+  position: relative;
+}
+.review {
+  font: normal 300 14px/31px 'Open Sans', sans-serif;
+  letter-spacing: 0.896px;
+  color: #373737;
+  text-align: center;
+  max-width: 735px;
+  margin: 117px auto 0;
+  min-height: 90px;
+}
+.symbol {
+  display: block;
+  margin: 30px auto;
+}
+.sign {
+  font: normal normal 18px 'Oswald', sans-serif;
+  letter-spacing: 1.152px;
+  color: #373737;
+  text-align: center;
+}
+.sign span {
+  font-weight: 300;
+  font-size: 16px;
+  color: #B8B8B8;
+}
+.stars {
+  margin-top: 25px;
+  text-align: center;
+
+}
+.stars img {
+  display: inline-block;
+  margin-right: 10px;
+}
+.star img:last-child {
+  margin-right: 0;
+}
+.unvisible {
+  display: none;
+}
+.review_line {
+  width: 511px;
+  color: #D8D8D8;
+  opacity: 0.5;
+  margin: 30px auto;
+}
+#next {
+  position: absolute;
+  top: 250px;
+  right: 250px;
+}
+#previos {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  transform: rotate(180deg);
+}
+#next:hover,
+#previos:hover {
+  cursor: pointer;
+}
