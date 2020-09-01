@@ -411,12 +411,15 @@ header span {
   top: 900px;
 }
 #work_block_link {
-  font: normal normal 13px 'Oswald' sans-serif;
+  font: normal normal 13px 'Oswald', sans-serif;
   text-transform: uppercase;
   color: #252525;
   position: absolute;
   bottom: 175px;
   right: 120px;
+}
+#work_block_link:hover {
+  color: #C2C2C2;
 }
 
 /*====================Team===============================*/
