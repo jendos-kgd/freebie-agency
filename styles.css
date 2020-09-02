@@ -555,3 +555,38 @@ header span {
 #previos:hover {
   cursor: pointer;
 }
+
+/*=========================Contact block=============*/
+.contact__block {
+  display: flex;
+}
+.contact_item {
+  width: 50%;
+  min-height: 300px;
+}
+.contact_item img {
+  display: block;
+  margin: 69px auto 19px;
+}
+.link_container {
+  width: 100%;
+  text-align: center;
+}
+.link_container a {
+  font: normal normal 24px/36px 'Oswald', sans-serif;
+  letter-spacing: 2.66667px;
+  color: #373737;
+}
+.contact_text {
+  font: normal 300 14px/19px 'Open Sans', sans-serif;
+  letter-spacing: 1.55556px;
+  color: #373737;
+  margin-top: 22px;
+  text-align: center;
+}
+.join_us {
+  background-color: #FBFBFB;
+}
+.contact_us {
+  background-color: #70BD59;
+}
